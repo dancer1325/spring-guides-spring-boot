@@ -15,6 +15,10 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+	/*
+	Bean method runs on start up
+	Returns all beans created by your application
+	 */
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {

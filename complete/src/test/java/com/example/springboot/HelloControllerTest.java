@@ -13,12 +13,18 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-@SpringBootTest
+// @WebMvcTest		-> ONLY web layers of the context are created
+// Alternative to next annotations
+
+@SpringBootTest		// -> whole application context created
 @AutoConfigureMockMvc
+//	allows injecting a MockMvc instance
 public class HelloControllerTest {
 
 	@Autowired
 	private MockMvc mvc;
+	// 1.send HTTP requests -- into the -- DispatcherServlet
+	// 2. make assertions about the result
 
 	@Test
 	public void getHello() throws Exception {

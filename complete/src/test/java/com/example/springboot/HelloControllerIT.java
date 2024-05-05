@@ -14,6 +14,7 @@ public class HelloControllerIT {
 
 	@Autowired
 	private TestRestTemplate template;
+    // 's base URL == SpringBootTest.WebEnvironment.RANDOM_PORT
 
     @Test
     public void getHello() throws Exception {

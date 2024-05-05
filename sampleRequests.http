@@ -1,0 +1,14 @@
+### GET root
+GET {{host}}
+
+### GET hello
+GET {{host}}/
+
+### GET actuator
+GET {{host}}/actuator
+
+### GET health
+GET {{host}}/actuator/health
+
+### POST shutdown
+POST {{host}}/actuator/shutdown
